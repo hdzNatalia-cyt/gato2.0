@@ -36,7 +36,7 @@ Proceso Gato
 		
         Si ~Ganador y CantTurnos < 9 Entonces
 			
-            // Dice a quÈ jugador le toca
+            // Dice a qu√© jugador le toca
             Si TurnoAlJugador1 Entonces
                 Ficha <- 'X'
                 Valor <- 1
@@ -47,7 +47,7 @@ Proceso Gato
                 Escribir "Turno del jugador 2 O"
             FinSi
 			
-            // Pide y valida posiciÛn
+            // Pide y valida posici√≥n
             Escribir "Ingrese el lugar (1-9):"
             Repetir
                 Leer Pos
@@ -58,7 +58,7 @@ Proceso Gato
                     i <- trunc((Pos - 1) / 3) + 1
                     j <- ((Pos - 1) MOD 3) + 1
                     Si Tab1[i,j] <> 0 Entonces
-                        Escribir "Ese lugar ya est· ocupado, intente otro."
+                        Escribir "Ese lugar ya est√° ocupado, intente otro."
                         Pos <- 99
                     FinSi
                 FinSi
@@ -105,7 +105,7 @@ Proceso Gato
                     Escribir "Jugador 2!"
                 FinSi
             Sino
-                Escribir "°Empate!"
+                Escribir "¬°Empate!"
             FinSi
             Terminado <- Verdadero
 			
